@@ -14,14 +14,14 @@
 def drawBody():
 	'''Draw the peach body'''
 	# read in data
-	peach = pd.read_csv('data/peach.csv',
+	peach = pd.read_csv("/Users/s3822883/Desktop/ASB_Tutorial/data/peach.csv",
 					header = None)
 	x, y = list(peach[0]), list(peach[1])
 	x.append(x[0])
 	y.append(y[0])
 
 	# plot data
-	ax.fill_between(x, y, color = 'peru')
+	ax.fill_between(x, y, color = (0.506, 0.0, 0.937))
 	ax.plot(x, y, color = 'black', linewidth = 2)
 
 # Solution
@@ -53,3 +53,4 @@ else:
 	# Thus all the dependencies and globals have already 
 	# been imported.
 	drawBody()
+#%%
