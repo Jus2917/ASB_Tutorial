@@ -21,7 +21,7 @@ def drawStemAndHalo():
 	# remove missing data 
 	outline[outline == -999] = 'NaN'
 
-	width = 3
+	width = 10
 
 	# plot data
 	ax.plot(outline[0], outline[1], 
